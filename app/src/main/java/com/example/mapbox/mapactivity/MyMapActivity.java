@@ -79,7 +79,6 @@ public class MyMapActivity extends DaggerAppCompatActivity implements OnClickLis
         if (savedInstanceState == null) {
 
             final FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-
             MapboxMapOptions options = MapboxMapOptions.createFromAttributes(this, null);
             options.camera(new CameraPosition.Builder()
                     .target(new LatLng(lat, lon))
